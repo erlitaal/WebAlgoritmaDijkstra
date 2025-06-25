@@ -1,5 +1,4 @@
 * {
-* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -216,6 +215,7 @@ footer {
   color: #007BFF;
 }
 }
+
 
 @media (max-width: 768px) {
   header {
