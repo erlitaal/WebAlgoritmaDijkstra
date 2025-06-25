@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Maps Dijkstra</title>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+
+  <link rel="stylesheet" href="desain.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">⚙️ Maps Dijkstra</div>
+    <nav>
+      <a href="#home" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="kelompok.html">Kelompok</a>
+    </nav>
+    
+  </header>
+
+  <div class="background-map"></div>
+  <section id="home" class="form-container">
+    <h2>MENCARI <span>RUTE</span></h2>
+    <form>
+      <input type="text" placeholder="Dari">
+      <input type="text" placeholder="Ke">
+      <button type="submit">CARI RUTE</button>
+    </form>
+    <div id="loading">⏳ Sedang mencari rute...</div>
+    <div id="route-info"></div>
+  </section>
+  <div id="map"></div>
+
+  <footer>
+    &copy; 2025 - Project by Kelompok 2
+  </footer>
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="./jawaa.js"></script>
+
+</body>
+</html>

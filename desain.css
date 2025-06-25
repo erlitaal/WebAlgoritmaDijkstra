@@ -1,0 +1,217 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: url('bg.png') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #e50914;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+nav a {
+  margin: 0 1rem;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+nav a:hover,
+nav a.active {
+  color: #ffd700;
+}
+.background-map {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/BlankMap-World-Microstates.svg/2000px-BlankMap-World-Microstates.svg.png') no-repeat center;
+  background-size: cover;
+  opacity: 0.1;
+  z-index: 0;
+}
+
+.form-container {
+  position: relative;
+  z-index: 1;
+  max-width: 400px;
+  margin: 5% auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 2rem;
+  text-align: center;
+  color: black;
+}
+.form-container h2 {
+  font-family: 'Anton', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+.form-container h2 span {
+  color: crimson;
+}
+.form-container input {
+  width: 100%;
+  padding: 0.8rem;
+  border: none;
+  margin: 0.6rem 0;
+  border-radius: 20px;
+  background: #ddd;
+  font-size: 1rem;
+}
+.form-container button {
+  margin-top: 1rem;
+  padding: 0.8rem 2rem;
+  background: crimson;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 2rem;
+  font-size: 1rem;
+  box-shadow: 5px 5px 0 black;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.form-container button:hover {
+  background: #c40000;
+  box-shadow: 3px 3px 0 black;
+}
+
+#loading {
+  display: none;
+  margin-top: 1rem;
+  color: crimson;
+  font-weight: bold;
+}
+
+#route-info {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  color: black;
+}
+
+#map {
+  height: 500px;
+  width: 90%;
+  max-width: 500px;
+  margin: 2rem auto;
+  border-radius: 1rem;
+  z-index: 1;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+  opacity: 0.6;
+}
+
+#kelompok {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;    
+  gap: 2rem;            
+}
+
+#kelompok img {
+  width: 1200px;
+  border-radius: 1rem;
+  border: 5px solid #fff;
+  outline: 3px dashed crimson;
+  padding: 5px;
+  background: #f0f0f0;
+  box-shadow: 4px 4px 10px rgba(0,0,0,0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.map {
+  width: 500px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.map-text-container {
+  display: flex;
+  align-items: center; /* membuat vertikal rata tengah */
+  gap: 20px; /* jarak antara gambar dan teks */
+}
+
+.map-text {
+  max-width: 400px; /* opsional, biar teks tidak terlalu panjang */
+  margin-right: auto;
+}
+
+#kelompok img:hover {
+  transform: translateY(-10px) rotate(-2deg);
+  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3);
+}
+.anggota-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 2rem 1rem;
+}
+
+.anggota-card img {
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.anggota-card img:hover {
+  transform: scale(1.02);
+}
+
+.anggota-img {
+  width: 100%;
+  max-width: 1000px; 
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  image-rendering: auto;
+  
+.about-content {
+  width:50px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.about-box {
+  flex: 1;
+  font-size: 18px;
+  line-height: 1.6;
+  min-width: 280px;
+}
+
+.about-title {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 32px;
+  font-weight: bold;
+  color: #007BFF;
+}
+}
