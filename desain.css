@@ -12,6 +12,7 @@ body {
   color: white;
 }
 
+
 header {
   display: flex;
   justify-content: space-between;
@@ -22,12 +23,10 @@ header {
   top: 0;
   z-index: 10;
 }
-
 .logo {
   font-weight: bold;
   font-size: 1.2rem;
 }
-
 nav a {
   margin: 0 1rem;
   color: white;
@@ -35,12 +34,10 @@ nav a {
   font-weight: 500;
   transition: color 0.3s ease;
 }
-
 nav a:hover,
 nav a.active {
   color: #ffd700;
 }
-
 .background-map {
   position: absolute;
   top: 80px;
@@ -64,17 +61,14 @@ nav a.active {
   text-align: center;
   color: black;
 }
-
 .form-container h2 {
   font-family: 'Anton', sans-serif;
   font-size: 2rem;
   margin-bottom: 1.5rem;
 }
-
 .form-container h2 span {
   color: crimson;
 }
-
 .form-container input {
   width: 100%;
   padding: 0.8rem;
@@ -84,7 +78,6 @@ nav a.active {
   background: #ddd;
   font-size: 1rem;
 }
-
 .form-container button {
   margin-top: 1rem;
   padding: 0.8rem 2rem;
@@ -98,7 +91,6 @@ nav a.active {
   cursor: pointer;
   transition: 0.3s;
 }
-
 .form-container button:hover {
   background: #c40000;
   box-shadow: 3px 3px 0 black;
@@ -138,13 +130,12 @@ footer {
   margin-top: 5rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 2rem;
+  align-items: center;    
+  gap: 2rem;            
 }
 
 #kelompok img {
-  width: 100%;
-  max-width: 1200px;
+  width: 1200px;
   border-radius: 1rem;
   border: 5px solid #fff;
   outline: 3px dashed crimson;
@@ -152,11 +143,6 @@ footer {
   background: #f0f0f0;
   box-shadow: 4px 4px 10px rgba(0,0,0,0.25);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-#kelompok img:hover {
-  transform: translateY(-10px) rotate(-2deg);
-  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3);
 }
 
 .map {
@@ -168,15 +154,19 @@ footer {
 
 .map-text-container {
   display: flex;
-  align-items: center;
-  gap: 20px;
+  align-items: center; /* membuat vertikal rata tengah */
+  gap: 20px; /* jarak antara gambar dan teks */
 }
 
 .map-text {
-  max-width: 400px;
+  max-width: 400px; /* opsional, biar teks tidak terlalu panjang */
   margin-right: auto;
 }
 
+#kelompok img:hover {
+  transform: translateY(-10px) rotate(-2deg);
+  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3);
+}
 .anggota-container {
   display: flex;
   flex-direction: column;
@@ -196,15 +186,14 @@ footer {
 
 .anggota-img {
   width: 100%;
-  max-width: 1000px;
+  max-width: 1000px; 
   height: auto;
   display: block;
   margin: 0 auto;
   image-rendering: auto;
-}
-
+  
 .about-content {
-  width: 50px;
+  width:50px;
   max-width: 100%;
   height: auto;
   border-radius: 12px;
@@ -225,55 +214,4 @@ footer {
   font-weight: bold;
   color: #007BFF;
 }
-
-@media screen and (max-width: 768px) {
-  header {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  nav {
-    display: flex;
-    flex-direction: row; /* ✅ MENU TETAP SEJAJAR */
-    flex-wrap: wrap;     /* ✅ Kalau kepanjangan bisa turun baris rapi */
-    justify-content: center;
-    gap: 0.5rem;
-  }
-
-  nav a {
-    margin: 0 0.5rem;
-  }
-}
-
-
-  .form-container {
-    width: 90%;
-    padding: 1rem;
-  }
-
-  #map {
-    width: 95%;
-    height: 300px;
-  }
-
-  #kelompok img,
-  .anggota-img {
-    width: 100%;
-    max-width: 100%;
-  }
-
-  .map-text-container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .map-text {
-    max-width: 100%;
-    margin: 0;
-  }
-
-  footer {
-    padding: 1rem;
-    font-size: 0.8rem;
-  }
 }
