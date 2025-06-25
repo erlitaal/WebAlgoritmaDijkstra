@@ -135,7 +135,8 @@ footer {
 }
 
 #kelompok img {
-  width: 1200px;
+  width: 100%;
+  max-width: 1200px;
   border-radius: 1rem;
   border: 5px solid #fff;
   outline: 3px dashed crimson;
@@ -214,4 +215,42 @@ footer {
   font-weight: bold;
   color: #007BFF;
 }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav a {
+    display: block;
+    margin: 0.5rem 0;
+  }
+
+  .form-container {
+    width: 90%;
+    padding: 1rem;
+  }
+
+  #map {
+    width: 95%;
+    height: 300px;
+  }
+
+  #kelompok img,
+  .anggota-img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .map-text-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .map-text {
+    max-width: 100%;
+    margin: 0;
+  }
 }
