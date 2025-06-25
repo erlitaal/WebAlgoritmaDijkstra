@@ -226,7 +226,6 @@ footer {
   color: #007BFF;
 }
 
-/* === Media Query Responsif untuk Mobile === */
 @media screen and (max-width: 768px) {
   header {
     flex-direction: column;
@@ -235,14 +234,17 @@ footer {
 
   nav {
     display: flex;
-    flex-direction: column;
+    flex-direction: row; /* ✅ MENU TETAP SEJAJAR */
+    flex-wrap: wrap;     /* ✅ Kalau kepanjangan bisa turun baris rapi */
+    justify-content: center;
     gap: 0.5rem;
   }
 
   nav a {
-    display: block;
-    margin: 0.5rem 0;
+    margin: 0 0.5rem;
   }
+}
+
 
   .form-container {
     width: 90%;
